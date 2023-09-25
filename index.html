@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Homework - JS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <main class="container w-50">
+        <div class="alert alert-primary my-3 px-5 text-center">
+            <span id="array-number">___</span>
+        </div>
+        <div class="my-3">
+            <input type="text" id="array-input" class="form-control d-inline w-50"
+                placeholder="Nhập vào các số nguyên ... ">
+            <button id="btn-add-array" class="btn btn-info mx-2">Add</button>
+        </div>
+        <h3>Bài: 1</h3>
+        <div class="my-3">
+            <span id="sumArray" class="form-control d-inline-block w-50 text-center">---</span>
+            <button id="btn-sum" class="btn btn-info mx-2">Result</button>
+        </div>
+        <h3>Bài: 2</h3>
+        <div class="my-3">
+            <span id="countArray" class="form-control d-inline-block w-50 text-center">---</span>
+            <button id="btn-count" class="btn btn-info mx-2">Count</button>
+        </div>
+        <h3>Bài: 3</h3>
+        <div class="my-3">
+            <span id="findNumberArray" class="form-control d-inline-block w-50 text-center">---</span>
+            <button id="btn-find-smallest-number" class="btn btn-info mx-2">Find</button>
+        </div>
+        <h3>Bài: 4</h3>
+        <div class="my-3">
+            <span id="findPositiveNumberArray" class="form-control d-inline-block w-50 text-center">---</span>
+            <button id="btn-find-smallest-positive-number" class="btn btn-info mx-2">Find</button>
+        </div>
+        <h3>Bài: 5</h3>
+        <div class="my-3">
+            <span id="findLastDoubleNumberArray" class="form-control d-inline-block w-50 text-center">---</span>
+            <button id="btn-find-last-double-number" class="btn btn-info mx-2">Find</button>
+        </div>
+        <h3>Bài: 6</h3>
+        <div class="my-3 text-center">
+            <div class="alert alert-primary my-3 px-5 text-center">
+                <span id="change-array-number">___</span>
+            </div>
+            <input type="text" id="inputIndex1" class="form-control d-inline w-25" placeholder="Vị trí 1">
+            <button id="btn-change-index-array" class="btn btn-info mx-2"><i
+                    class="fa-solid fa-arrows-rotate"></i></button>
+            <input type="text" id="inputIndex2" class="form-control d-inline w-25" placeholder="Vị trí 2">
+        </div>
+        <h3>Bài: 7</h3>
+        <div class="my-3 text-center">
+            <div class="alert alert-primary my-3 px-5 text-center">
+                <span id="sort-up-array-number">___</span>
+            </div>
+            <button id="btn-sort-up-array" class="btn btn-info mx-2"><i class="fa-solid fa-arrow-up-1-9"></i>
+                Sort</button>
+        </div>
+        <h3>Bài: 8</h3>
+        <div class="my-3">
+            <span id="findFirstPrimeNumberArray" class="form-control d-inline-block w-50 text-center">---</span>
+            <button id="btn-find-first-prime-number" class="btn btn-info mx-2">Find</button>
+        </div>
+        <h3>Bài: 9</h3>
+        <div class="my-3">
+            <div class="alert alert-primary my-3 px-5 text-center">
+                <span id="array-real-number">___</span>
+            </div>
+            <input type="text" id="array-real-input" class="form-control d-inline w-50"
+                placeholder="Nhập vào các số thực ... ">
+            <button id="btn-add-real-array" class="btn btn-info mx-2">Add</button>
+            <span id="find-integer-number" class="form-control d-inline-block w-50 text-center">---</span>
+            <button id="btn-find-integer-number" class="btn btn-info mx-2">Find</button>
+        </div>
+        <h3>Bài: 10</h3>
+
+
+    </main>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- file js  -->
+    <script src="./js/method.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
