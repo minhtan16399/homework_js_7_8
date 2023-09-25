@@ -20,7 +20,8 @@
 </head>
 
 <body>
-    <main class="container w-50">
+    <main class="container w-50 pt-3">
+        <h3>Nhập vào các số nguyên</h3>
         <div class="alert alert-primary my-3 px-5 text-center">
             <span id="array-number">___</span>
         </div>
@@ -29,32 +30,38 @@
                 placeholder="Nhập vào các số nguyên ... ">
             <button id="btn-add-array" class="btn btn-info mx-2">Add</button>
         </div>
-        <h3>Bài: 1</h3>
+        
+        <h3>Bài 1: Tổng các số dương trong mảng</h3>
         <div class="my-3">
             <span id="sumArray" class="form-control d-inline-block w-50 text-center">---</span>
             <button id="btn-sum" class="btn btn-info mx-2">Result</button>
         </div>
-        <h3>Bài: 2</h3>
+
+        <h3>Bài 2: Đếm có bao nhiêu số dương trong mảng</h3>
         <div class="my-3">
             <span id="countArray" class="form-control d-inline-block w-50 text-center">---</span>
             <button id="btn-count" class="btn btn-info mx-2">Count</button>
         </div>
-        <h3>Bài: 3</h3>
+
+        <h3>Bài 3: Tìm số nhỏ nhất trong mảng</h3>
         <div class="my-3">
             <span id="findNumberArray" class="form-control d-inline-block w-50 text-center">---</span>
             <button id="btn-find-smallest-number" class="btn btn-info mx-2">Find</button>
         </div>
-        <h3>Bài: 4</h3>
+
+        <h3>Bài 4: Tìm số dương nhỏ nhất trong mảng</h3>
         <div class="my-3">
             <span id="findPositiveNumberArray" class="form-control d-inline-block w-50 text-center">---</span>
             <button id="btn-find-smallest-positive-number" class="btn btn-info mx-2">Find</button>
         </div>
-        <h3>Bài: 5</h3>
+
+        <h3>Bài 5: Tìm số chẵn cuối cùng trong mảng</h3>
         <div class="my-3">
             <span id="findLastDoubleNumberArray" class="form-control d-inline-block w-50 text-center">---</span>
             <button id="btn-find-last-double-number" class="btn btn-info mx-2">Find</button>
         </div>
-        <h3>Bài: 6</h3>
+
+        <h3>Bài 6: Đổi chỗ 2 giá trị trong mảng theo vị trí</h3>
         <div class="my-3 text-center">
             <div class="alert alert-primary my-3 px-5 text-center">
                 <span id="change-array-number">___</span>
@@ -64,7 +71,8 @@
                     class="fa-solid fa-arrows-rotate"></i></button>
             <input type="text" id="inputIndex2" class="form-control d-inline w-25" placeholder="Vị trí 2">
         </div>
-        <h3>Bài: 7</h3>
+
+        <h3>Bài 7: Sắp xếp mảng theo thứ tự tăng dần</h3>
         <div class="my-3 text-center">
             <div class="alert alert-primary my-3 px-5 text-center">
                 <span id="sort-up-array-number">___</span>
@@ -72,12 +80,14 @@
             <button id="btn-sort-up-array" class="btn btn-info mx-2"><i class="fa-solid fa-arrow-up-1-9"></i>
                 Sort</button>
         </div>
-        <h3>Bài: 8</h3>
+
+        <h3>Bài 8: Tìm số nguyên tố đầu tiên trong mảng</h3>
         <div class="my-3">
             <span id="findFirstPrimeNumberArray" class="form-control d-inline-block w-50 text-center">---</span>
             <button id="btn-find-first-prime-number" class="btn btn-info mx-2">Find</button>
         </div>
-        <h3>Bài: 9</h3>
+
+        <h3>Bài 9: Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên</h3>
         <div class="my-3">
             <div class="alert alert-primary my-3 px-5 text-center">
                 <span id="array-real-number">___</span>
@@ -86,9 +96,22 @@
                 placeholder="Nhập vào các số thực ... ">
             <button id="btn-add-real-array" class="btn btn-info mx-2">Add</button>
             <span id="find-integer-number" class="form-control d-inline-block w-50 text-center">---</span>
-            <button id="btn-find-integer-number" class="btn btn-info mx-2">Find</button>
+            <button id="btn-find-integer-number" class="btn btn-info mx-2">Count Integer Number</button>
         </div>
-        <h3>Bài: 10</h3>
+
+        <h3>Bài 10: So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn</h3>
+        <div class="my-3">
+            <span id="countPositiveNumberArray" class="form-control d-inline-block w-25 text-center">---</span>
+            <div class="mx-3 d-inline-block">
+                <i id="less-than" class="fa-solid fa-less-than" style="display: none;"></i>
+                <i id="greater-than" class="fa-solid fa-greater-than" style="display: none;"></i>
+                <i id="equal" class="fa-solid fa-equals" style="display: none;"></i>
+            </div>
+            <span id="countNegativeNumberArray" class="form-control d-inline-block w-25 text-center">---</span>
+            <button id="btn-compare-number" class="btn btn-info mx-2">Compare Number</button>
+        </div>
+
+
 
 
     </main>

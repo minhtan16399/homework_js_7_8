@@ -46,7 +46,7 @@ document.getElementById('btn-sum').onclick = function () {
 document.getElementById('btn-count').onclick = function () {
     let count = 0;
     for (let index = 0; index < arrayOutput.length; index++) {
-        if (arrayOutput[index] > 0) {
+        if (arrayOutput[index] >= 0) {
             count = count + 1;
         } else {
             count = count;
@@ -104,7 +104,7 @@ document.getElementById('btn-change-index-array').onclick = function () {
     changeArray[inputIndex2] = changeArray[inputIndex1];
     changeArray[inputIndex1] = changeArray[index];
     document.getElementById('change-array-number').innerHTML = changeArray;
-}
+};
 
 // question 7 
 document.getElementById('btn-sort-up-array').onclick = function () {
@@ -113,7 +113,7 @@ document.getElementById('btn-sort-up-array').onclick = function () {
         sortUpArray.sort(function (a, b) { return a - b });
     };
     document.getElementById('sort-up-array-number').innerHTML = sortUpArray;
-}
+};
 
 // question 8
 document.getElementById('btn-find-first-prime-number').onclick = function () {
@@ -133,20 +133,56 @@ document.getElementById('btn-find-first-prime-number').onclick = function () {
 // question 9
 var arrayRealOutput = [];
 document.getElementById('btn-add-real-array').onclick = function () {
-    let addArrayRealNumber = +document.getElementById('array-real-input').value; 
+    let addArrayRealNumber = +document.getElementById('array-real-input').value;
     arrayRealOutput.push(addArrayRealNumber);
     document.getElementById('array-real-number').innerHTML = arrayRealOutput;
 };
 document.getElementById('btn-find-integer-number').onclick = function () {
     let sumIntegerNumber = 0;
     for (let index = 0; index < arrayRealOutput.length; index++) {
-        let inputNumber = integerNumber(index);
-        if (inputNumber == true) {
-sumIntegerNumber++
+        let inputNumber = integerNumber(arrayRealOutput[index]);
+        if (inputNumber === true) {
+            sumIntegerNumber++
         }
     }
     document.getElementById('find-integer-number').innerHTML = sumIntegerNumber;
-}
+};
+
+// question 10 
+document.getElementById('btn-compare-number').onclick = function () {
+    let iconLessThan = document.getElementById('less-than');
+    let iconGreaterThan = document.getElementById('greater-than');
+    let iconEqual = document.getElementById('equal');
+    let countPositiveNumber = 0;
+    let countNegativeNumber = 0;
+    for (let index = 0; index < arrayOutput.length; index++) {
+        if (arrayOutput[index] > 0) {
+            countPositiveNumber ++;
+        } else if (arrayOutput[index] < 0) {
+            countNegativeNumber++;
+        } else {
+            countPositiveNumber ++;
+            countNegativeNumber++;
+        };
+    };
+    document.getElementById('countPositiveNumberArray').innerHTML = countPositiveNumber + ' số dương ';
+    document.getElementById('countNegativeNumberArray').innerHTML = countNegativeNumber + ' số âm ';
+    if (countPositiveNumber > countNegativeNumber) {
+        iconGreaterThan.style.display = 'block';
+        iconLessThan.style.display = 'none';
+        iconEqual.style.display = 'none';
+    } else if (countNegativeNumber > countPositiveNumber) {
+        iconGreaterThan.style.display = 'none';
+        iconLessThan.style.display = 'block';
+        iconEqual.style.display = 'none';
+    } else {
+        iconGreaterThan.style.display = 'none';
+        iconLessThan.style.display = 'none';
+        iconEqual.style.display = 'block';
+    };
+};
+
+
 
 
 
