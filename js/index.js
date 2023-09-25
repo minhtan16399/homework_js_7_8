@@ -131,13 +131,23 @@ document.getElementById('btn-find-first-prime-number').onclick = function () {
 };
 
 // question 9
-
+var arrayRealOutput = [];
 document.getElementById('btn-add-real-array').onclick = function () {
-    var arrayRealOutput = [];
     let addArrayRealNumber = +document.getElementById('array-real-input').value; 
     arrayRealOutput.push(addArrayRealNumber);
     document.getElementById('array-real-number').innerHTML = arrayRealOutput;
 };
+document.getElementById('btn-find-integer-number').onclick = function () {
+    let sumIntegerNumber = 0;
+    for (let index = 0; index < arrayRealOutput.length; index++) {
+        let inputNumber = integerNumber(index);
+        if (inputNumber == true) {
+sumIntegerNumber++
+        }
+    }
+    document.getElementById('find-integer-number').innerHTML = sumIntegerNumber;
+}
+
 
 
 
